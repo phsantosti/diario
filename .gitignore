@@ -1,0 +1,7 @@
+/target
+# Dados do app, caso DIARIO_DIR aponte para esta pasta:
+# anotações pessoais, modelo de voz (centenas de MB) e estado local.
+/entradas
+/modelos
+/rascunho.txt
+/microfone.txt

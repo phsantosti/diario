@@ -1,0 +1,6 @@
+[env]
+# Sem isto o cmake-rs troca as flags de Release do whisper.cpp por outras sem /O2
+# e a transcrição fica ~5x mais lenta. O whisper-rs-sys repassa variáveis CMAKE_* ao CMake.
+# Flags do MSVC: o projeto é compilado no Windows.
+CMAKE_C_FLAGS_RELEASE = "/O2 /Ob2 /DNDEBUG"
+CMAKE_CXX_FLAGS_RELEASE = "/O2 /Ob2 /DNDEBUG"

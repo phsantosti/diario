@@ -1,0 +1,19 @@
+[package]
+name = "diario"
+version = "0.1.0"
+edition = "2024"
+description = "Diário de trabalho por voz: aperte o microfone, fale, e o texto vira anotação do dia."
+
+[dependencies]
+chrono = "0.4.45"
+cpal = "0.18.2"
+dirs = "7.0.0"
+eframe = "0.37.0"
+ureq = "3.5.2"
+whisper-rs = "0.16.0"
+
+[dev-dependencies]
+hound = "3.5.1"
+
+[profile.release]
+opt-level = 3
